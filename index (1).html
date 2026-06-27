@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brandon Williams — Portfolio</title>
+
+  <!--
+    Content-Security-Policy via meta tag. This is a real, enforced restriction
+    (no inline scripts, no inline style attributes, only same-origin + Google
+    Fonts allowed) but it is NOT a substitute for HTTPS or server-level
+    security headers — see the deployment notes at the bottom of this file.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none';" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="cursor-glow"></div>
+
+<nav>
+  <a href="#home" class="nav-logo">
+    AR<span class="accent-dot">.</span>
+  </a>
+  <div class="nav-links">
+    <a href="#home" class="nav-home-icon" title="Home" aria-label="Home">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+      </svg>
+    </a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#recommendations">Recommendations</a>
+  </div>
+</nav>
+
+<section id="home">
+  <p class="section-eyebrow">Welcome to my portfolio</p>
+  <h1 class="hero-name">Brandon <span>Williams</span></h1>
+  <p class="hero-sub">Python developer building things that run on their own — algorithmic trading bots, neural networks from scratch, NLP pipelines, and the occasional cryptography exercise just to see how it works under the hood.</p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">View My Work</a>
+    <a href="#recommendations" class="btn btn-ghost">Leave a Recommendation</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="about">
+  <p class="section-eyebrow">Who I Am</p>
+  <div class="about-grid">
+    <div>
+      <div class="about-avatar">🧑‍💻</div>
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I'm a Python developer who learns by building real, working systems rather than tutorials — an automated forex trading bot, a neural network written without a high-level ML framework, an NLP pipeline for generating text, a basic Q&amp;A system, even an AES encryption implementation just to understand symmetric-key cryptography from first principles.</p>
+      <p>I'm drawn to problems where logic has to run unattended and get it right — trading decisions, data pipelines, security primitives. <em>[Add a line here about your location, background, or what you're looking for next — this is the one part of the page I can't write truthfully for you.]</em></p>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num">9</span><span class="stat-label">Public projects</span></div>
+        <div class="stat"><span class="stat-num">Python</span><span class="stat-label">Primary language</span></div>
+        <div class="stat"><span class="stat-num">18</span><span class="stat-label">Commits on GitHub</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="skills">
+  <p class="section-eyebrow">What I Know</p>
+  <h2 class="skills-title">Skills</h2>
+  <p class="skills-intro">Grounded in my actual GitHub history, not a self-rated guess.</p>
+  <div class="skills-grid">
+    <div class="skill-card" data-pct="97.8">
+      <div class="skill-icon">🐍</div>
+      <div class="skill-name">Python</div>
+      <div class="skill-bar-bg"><div class="skill-bar"></div></div>
+      <div class="skill-level">Primary language — 97.8% of my public repos</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📈</div>
+      <div class="skill-name">Algorithmic Trading &amp; Automation</div>
+      <div class="skill-level">Forex trading bots that pull market data and execute trades unattended</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🧠</div>
+      <div class="skill-name">Machine Learning</div>
+      <div class="skill-level">Built a neural network from scratch to understand the mechanics, not just call a library</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">💬</div>
+      <div class="skill-name">NLP &amp; Text Generation</div>
+      <div class="skill-level">A text generation pipeline and a basic question-answering system</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🔐</div>
+      <div class="skill-name">Security &amp; Cryptography</div>
+      <div class="skill-level">Implemented AES encryption/decryption to learn symmetric-key crypto first-hand</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🔌</div>
+      <div class="skill-name">Real-time Systems</div>
+      <div class="skill-level">WebSockets for bidirectional, real-time communication</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="projects">
+  <p class="section-eyebrow">What I've Built</p>
+  <h2 class="projects-title">Projects</h2>
+  <p class="projects-intro">A selection of what's in my <a href="https://github.com/Branwilli/Projects" target="_blank" rel="noopener noreferrer" class="intro-link">GitHub repo</a> — click through to read the actual code.</p>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-thumb thumb-1">📈</div>
+      <div class="project-body">
+        <div class="project-name">Multipair Forex Bot</div>
+        <div class="project-desc">An automated trading bot that monitors and trades multiple forex currency pairs at once — market data in, trade decisions out, no manual intervention.</div>
+        <div class="project-tags"><span class="tag">Python</span><span class="tag">Automation</span><span class="tag">Trading</span></div>
+        <a href="https://github.com/Branwilli/Projects/tree/main/Multipair-ForEx-bot" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-thumb thumb-2">🧠</div>
+      <div class="project-body">
+        <div class="project-name">Neural Network</div>
+        <div class="project-desc">A neural network built from the ground up in Python — forward and backward propagation implemented directly, rather than calling into a high-level ML framework.</div>
+        <div class="project-tags"><span class="tag">Python</span><span class="tag">Machine Learning</span></div>
+        <a href="https://github.com/Branwilli/Projects/tree/main/Neural-Network" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-thumb thumb-3">💬</div>
+      <div class="project-body">
+        <div class="project-name">Text Generation Pipeline</div>
+        <div class="project-desc">A pipeline that takes raw input through to generated text output — covering preprocessing, generation, and the plumbing in between.</div>
+        <div class="project-tags"><span class="tag">Python</span><span class="tag">NLP</span></div>
+        <a href="https://github.com/Branwilli/Projects/tree/main/Text%20Generation%20Pipeline" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-thumb thumb-4">🔐</div>
+      <div class="project-body">
+        <div class="project-name">AES Encryption</div>
+        <div class="project-desc">A from-scratch implementation of AES encryption and decryption, built to understand symmetric-key cryptography at a low level rather than just importing a library.</div>
+        <div class="project-tags"><span class="tag">Python</span><span class="tag">Security</span><span class="tag">Cryptography</span></div>
+        <a href="https://github.com/Branwilli/Projects/tree/main/Basic-AES-Encryption" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-thumb thumb-5">🔌</div>
+      <div class="project-body">
+        <div class="project-name">WebSockets</div>
+        <div class="project-desc">An exploration of real-time, bidirectional communication with WebSockets — the same foundation behind live dashboards, chat, and streaming data.</div>
+        <div class="project-tags"><span class="tag">WebSockets</span><span class="tag">Real-time</span></div>
+        <a href="https://github.com/Branwilli/Projects/tree/main/WebSockets" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-thumb thumb-6">📊</div>
+      <div class="project-body">
+        <div class="project-name">Workplace Intel Hub</div>
+        <div class="project-desc">A dashboard project for surfacing workplace data and operational insight in one place.</div>
+        <div class="project-tags"><span class="tag">Python</span><span class="tag">Dashboards</span><span class="tag">Data</span></div>
+        <a href="https://github.com/Branwilli/Projects/tree/main/Nexus-workplace-intel-hub" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+  </div>
+  <p class="projects-more">Also on GitHub: a basic Q&amp;A system and a Python email automation script. <a href="https://github.com/Branwilli/Projects" target="_blank" rel="noopener noreferrer">See everything →</a></p>
+</section>
+
+<div class="divider"></div>
+
+<section id="recommendations">
+  <p class="section-eyebrow">Kind Words</p>
+  <h2 class="rec-title">Recommendations</h2>
+  <p class="rec-intro">This section is ready for real feedback from people you've worked with — add yours below, or come back once you have one to share.</p>
+
+  <div class="rec-form-card">
+    <h3>✍️ Leave a Recommendation</h3>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Your Name *</label>
+        <input type="text" id="rec-name" placeholder="Jane Smith" />
+      </div>
+      <div class="form-group">
+        <label>Your Role / Company</label>
+        <input type="text" id="rec-role" placeholder="CTO at Acme Inc." />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group form-full">
+        <label>Your Recommendation *</label>
+        <textarea id="rec-text" placeholder="Share your experience working with Brandon..."></textarea>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Rating</label>
+        <select id="rec-rating">
+          <option value="5">⭐⭐⭐⭐⭐ — Outstanding</option>
+          <option value="4">⭐⭐⭐⭐ — Great</option>
+          <option value="3">⭐⭐⭐ — Good</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn-submit" id="rec-submit-btn">Submit Recommendation →</button>
+  </div>
+
+  <div id="rec-list">
+    <div class="rec-empty" id="rec-empty-state">
+      No recommendations yet — be the first to leave one! 🎉
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Designed &amp; built by <a href="#home">Brandon Williams</a> · <a href="mailto:Brandon@example.com">Brandon@example.com</a></p>
+  <p class="footer-fine">© 2026 All rights reserved.</p>
+</footer>
+
+<div id="toast">🎉 Recommendation submitted — thank you!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
